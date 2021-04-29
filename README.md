@@ -118,8 +118,9 @@ const styles = StyleSheet.create({
 ### Technologies used:
 1. React Native (https://reactnative.dev/doc/)
 2. React Navigator (https://reactnavigation.org/docs/navigating)
-3. Cocoapods (https://cocoapods.org/)
-4. Figma (https://figma.com/)
+3. ExpoGo (https://docs.expo.io/get-started/installation/)
+4. Cocoapods (https://cocoapods.org/)
+5. Figma (https://figma.com/)
 
 ---
 ## Issues and Resolutions
