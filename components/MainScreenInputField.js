@@ -3,6 +3,10 @@ import { View, StyleSheet, TextInput } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
+        flex: 1,
+        alignSelf: 'flex-end',
+        paddingHorizontal: 120,
+        paddingVertical: 18,
     },
     text: {
         // Tip: Need '100%' width to expand inputField to container 
@@ -10,12 +14,10 @@ const styles = StyleSheet.create({
         width: '100%',
         color: 'black',
         fontFamily: 'Courier New',
-        fontSize: 16,
-        // marginLeft: 120,
-        paddingHorizontal: 10,
+        fontSize: 18,
+        paddingHorizontal: 12,
         width: 120,
         height: 40,
-        alignSelf: 'flex-end',
     },
 })
 

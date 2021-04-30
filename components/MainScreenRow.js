@@ -9,10 +9,13 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignSelf: 'flex-start',
-        // alignItems: 'baseline',
+        // flexDirection: 'row',
+        // justifyContent: 'space-between',
+        // alignContent: 'space-between',
+        // alignItems: 'stretch',
         padding: 5,
         marginLeft: 20,
-    },
+    }, 
     text: {
         color: 'black',
         fontSize: 30,

@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
         color: 'black',
     },
 })
-
+ 
 const MainScreenLabel = ({ text }) => {
     return (
         // ** Fix was to wrap it in a <View> Container!

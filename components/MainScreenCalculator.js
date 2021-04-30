@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         // Tip: Don't need flex to justifyContent**
         flexDirection: 'row',
-        justifyContent: 'space-around',
+        justifyContent: 'space-around', 
         alignItems: 'center',
     },
     nested: {
