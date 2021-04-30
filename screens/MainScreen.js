@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
         flex: 1,
         margin: 10,
         backgroundColor: '#fff',
-        // justifyContent: 'space-evenly',
+        // justifyContent: 'space-around',
         alignItems: 'center',
         marginBottom: 40,
     },
@@ -54,26 +54,34 @@ const MainScreen = ({ navigation, screen }) => {
                         source={require('../res/images/informationCircle.png')} />
                 </TouchableOpacity>
                 <MainScreenRow
-                    text={"Hourly Wage"}
+                    text={"Hourly Wage          $"}
                     word={wageState}
-                    dummyText={"$ 0.00"}
+                    dummyText={"0.00"}
                     keyboard={"numeric"}
-                    width={20} />
+                    width={150} 
+                    padding={9}
+                    />
                 <Line />
                 <MainScreenRow
-                    text={"Price of Expense"}
+                    text={"Price of Expense    $ "}
                     word={expenseState}
-                    dummyText={"$ 0.00"}
+                    dummyText={"0.00"}
                     keyboard={"numeric"}
-                    width={20} />
+                    width={150} 
+                    padding={2}
+
+                    />
                 <Line />
                 <MainScreenRow
                     text={"Label"}
                     word={labelState}
                     dummyText={"New item"}
                     keyboard={"default"}
-                    width={20} />
-                <Line />
+                    width={243} 
+                    padding={46}
+                    
+                    />
+                {/* <Line /> */}
                 <CalculateButton
                     text={"Calculate"}
                     word={calculatorState} />

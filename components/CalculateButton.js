@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
         height: 40,
         // Tip: Use alignSelf
         alignSelf: 'flex-end',
+        marginTop: 13,
     },
     btnText: {
         color: '#ffffff',
