@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { View, StyleSheet, TextInput } from 'react-native';
+import { onChange } from 'react-native-reanimated';
 
 const styles = StyleSheet.create({
     // container: {
@@ -15,16 +16,15 @@ const styles = StyleSheet.create({
     //     borderWidth: 1,
     // },
     text: {
+        color: 'black',
+        fontSize: 23,
+        fontFamily: 'Courier New',
         backgroundColor: '#E2CFE9',
         // Tip: Need '100%' width to expand inputField to container 
         width: '100%',
         // Note: Need '100%' height so that 'textInput' component stretches vertically; but needed to decrease 
         height: '80%',
         // add margin to push input down
-        // textAlign: 'right',
-        color: 'black',
-        fontFamily: 'Courier New',
-        fontSize: 23,
         marginTop: 15,
         paddingRight: 15,
     },
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
 const MainScreenInputField = ({ word, dummyText, keyboard, width }) => {
     const [state, setState] = word;
     // TODO: CONTINUE HERE: "prevent change in state and re-rendering"
-    let input = ''
+    const [tempInput, setTempInput] = useState('');
     const createTempState = () => {
         // input
     }
@@ -61,12 +61,13 @@ const MainScreenInputField = ({ word, dummyText, keyboard, width }) => {
                 autoFocus={true}
                 textAlign="right"
                 clearButtonMode="never"
+                value={state}
                 // ** TODO: React-Native keyboard would stay onFocus
                 // ** Not an issue with changing Parent-State 
                 // ** Must figure out why
-                onChangeText={setState}
+                onChangeText={v => setState(v)}
+                onEndEditing={() => onChange(state)}
                 // ** Successfully clears state
-                value={state}
                 keyboardDismissMode='none'
                 blueOnSubmit={false}
                 // editable={true}

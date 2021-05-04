@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
         paddingTop: 14,
         paddingLeft: 1,
         paddingRight: 45,
-        // textAlign: 'center',
     },
 })
 
@@ -35,7 +34,6 @@ const MainScreenLabel = ({ text, padding }) => {
                     paddingTop: 14,
                     paddingLeft: 14,
                     paddingRight: padding,
-                    // textAlign: 'center',
                 }}
             >
                 {text}

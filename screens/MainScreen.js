@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
         flex: 1,
         margin: 10,
         backgroundColor: '#fff',
-        // justifyContent: 'space-around',
         alignItems: 'center',
         marginBottom: 40,
     },
@@ -81,7 +80,6 @@ const MainScreen = ({ navigation, screen }) => {
                     padding={46}
                     
                     />
-                {/* <Line /> */}
                 <CalculateButton
                     text={"Calculate"}
                     word={calculatorState} />
