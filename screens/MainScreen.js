@@ -33,21 +33,21 @@ const styles = StyleSheet.create({
         alignSelf: 'baseline',
         justifyContent: 'center',
         // debugging borders
-        // borderStyle: 'solid',
-        // borderColor: 'black',
-        // borderWidth: 1,
+        borderStyle: 'solid',
+        borderColor: 'black',
+        borderWidth: 1,
     },
     row: {
         flex: 1,
         alignSelf: 'flex-start',
         flexDirection: 'row',
         justifyContent: 'flex-end',
-        width: 358,
+        width: 358, // 358
         marginLeft: 20,
         // debugging borders
-        // borderStyle: 'solid',
-        // borderColor: 'black',
-        // borderWidth: 1,
+        borderStyle: 'solid',
+        borderColor: 'black',
+        borderWidth: 1,
     },
     rowText: {
         color: 'black',
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    input: {
+    input1: {
         color: 'black',
         fontSize: 23,
         fontFamily: 'Courier New',
@@ -70,9 +70,52 @@ const styles = StyleSheet.create({
         marginTop: 15,
         paddingRight: 15,
         // flex: 3,
-                    alignSelf: 'flex-end',
-                    // width: 150,
-                    // height: 20,
+        alignSelf: 'flex-end',
+        width: 150,
+        height: 20,
+        borderStyle: 'solid',
+        borderColor: 'black',
+        borderWidth: 1,
+    },
+    input2: {
+        color: 'black',
+        fontSize: 23,
+        fontFamily: 'Courier New',
+        backgroundColor: '#E2CFE9',
+        // Tip: Need '100%' width to expand inputField to container 
+        // width: '100%',
+        // Note: Need '100%' height so that 'textInput' component stretches vertically; but needed to decrease 
+        // height: '80%',
+        // add margin to push input down
+        marginTop: 15,
+        paddingRight: 15,
+        // flex: 3,
+        alignSelf: 'flex-end',
+        width: 150,
+        height: 20,
+        borderStyle: 'solid',
+        borderColor: 'black',
+        borderWidth: 1,
+    },
+    input3: {
+        color: 'black',
+        fontSize: 23,
+        fontFamily: 'Courier New',
+        backgroundColor: '#E2CFE9',
+        // Tip: Need '100%' width to expand inputField to container 
+        // width: '100%',
+        // Note: Need '100%' height so that 'textInput' component stretches vertically; but needed to decrease 
+        // height: '80%',
+        // add margin to push input down
+        marginTop: 15,
+        paddingRight: 15,
+        // flex: 3,
+        alignSelf: 'flex-end',
+        width: 243,
+        height: 20,
+        borderStyle: 'solid',
+        borderColor: 'black',
+        borderWidth: 1,
     },
 })
 
@@ -88,7 +131,7 @@ const MainScreen = ({ navigation, screen }) => {
     const labelState = [label, setLabel]
 
     return (
-        // Note: Passed down as 'Context' and as
+        // Note: Passed down as 'Context' and as 'props'
         <CalculatorContext.Provider value={{
             wageState: wageState,
             expenseState: expenseState,
@@ -102,14 +145,6 @@ const MainScreen = ({ navigation, screen }) => {
                         style={{ marginLeft: 330 }}
                         source={require('../res/images/informationCircle.png')} />
                 </TouchableOpacity>
-                {/* <MainScreenRow
-                    text={"Hourly Wage          $"}
-                    word={wageState}
-                    dummyText={"0.00"}
-                    keyboard={"numeric"}
-                    width={150}
-                    padding={9}
-                /> */}
                 <View style={styles.row}>
                     <Text style={styles.rowText}>
                         <View style={styles.label}>
@@ -126,10 +161,9 @@ const MainScreen = ({ navigation, screen }) => {
                                 {"Hourly Wage          $"}
                             </Text>
                         </View>
-                        {/* Insert <TextInput> here */}
                     </Text>
                     <TextInput
-                        style={styles.input}
+                        style={styles.input1}
                         placeholder={"0.00"}
                         keyboardType={"numeric"}
                         placeholderTextColor="black"
@@ -144,61 +178,72 @@ const MainScreen = ({ navigation, screen }) => {
                         onChangeText={v => setHourlyWage(v)}
                     />
                 </View>
-                <View style={{
-                    flex: 3,
-                    alignSelf: 'flex-end',
-                    width: 150,
-                    height: 20,
-                    // debugging borders+
-                    // borderStyle: 'solid',
-                    // borderColor: 'black',
-                    // borderWidth: 1,
-                }}>
-                </View>
                 <Line />
-                {/* <MainScreenRow
-                    text={"Price of Expense    $ "}
-                    word={expenseState}
-                    dummyText={"0.00"}
-                    keyboard={"numeric"}
-                    width={150}
-                    padding={2}
-                /> */}
-                <View style={styles.label}>
-                    <Text
-                        style={{
-                            color: 'black',
-                            fontSize: 20,
-                            fontFamily: 'Helvetica',
-                            paddingTop: 14,
-                            paddingLeft: 14,
-                            paddingRight: 2,
-                        }}
-                    >
-                        {"Price of Expense    $ "}
+                <View style={styles.row}>
+                    <Text style={styles.rowText}>
+                        <View style={styles.label}>
+                            <Text
+                                style={{
+                                    color: 'black',
+                                    fontSize: 20,
+                                    fontFamily: 'Helvetica',
+                                    paddingTop: 14,
+                                    paddingLeft: 14,
+                                    paddingRight: 2,
+                                }}
+                            >
+                                {"Price of Expense    $ "}
+                            </Text>
+                        </View>
+                        <TextInput
+                            style={styles.input2}
+                            placeholder={"0.00"}
+                            keyboardType={"numeric"}
+                            placeholderTextColor="black"
+                            autoCompleteType='off'
+                            autoCorrect={false}
+                            autoFocus={true}
+                            keyboardDismissMode='none'
+                            blurOnSubmit={false}
+                            textAlign="right"
+                            clearButtonMode="never"
+                            value={priceExpense}
+                            onChangeText={v => setPriceExpense(v)}
+                        />
                     </Text>
                 </View>
                 <Line />
-                {/* <MainScreenRow
-                    text={"Label"}
-                    word={labelState}
-                    dummyText={"New item"}
-                    keyboard={"default"}
-                    width={243}
-                    padding={46}
-                /> */}
-                <View style={styles.label}>
-                    <Text
-                        style={{
-                            color: 'black',
-                            fontSize: 20,
-                            fontFamily: 'Helvetica',
-                            paddingTop: 14,
-                            paddingLeft: 14,
-                            paddingRight: 46,
-                        }}
-                    >
-                        {"Label"}
+                <View style={styles.row}>
+                    <Text style={styles.rowText}>
+                        <View style={styles.label}>
+                            <Text
+                                style={{
+                                    color: 'black',
+                                    fontSize: 20,
+                                    fontFamily: 'Helvetica',
+                                    paddingTop: 14,
+                                    paddingLeft: 14,
+                                    paddingRight: 10, // 46
+                                }}
+                            >
+                                {"Label"}
+                            </Text>
+                        </View>
+                        <TextInput
+                            style={styles.input3}
+                            placeholder={"New Item"}
+                            keyboardType={"default"}
+                            placeholderTextColor="black"
+                            autoCompleteType='off'
+                            autoCorrect={false}
+                            autoFocus={true}
+                            keyboardDismissMode='none'
+                            blurOnSubmit={false}
+                            textAlign="right"
+                            clearButtonMode="never"
+                            value={label}
+                            onChangeText={v => setLabel(v)}
+                        />
                     </Text>
                 </View>
                 <CalculateButton
