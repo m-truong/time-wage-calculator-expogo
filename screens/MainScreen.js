@@ -39,6 +39,7 @@ const MainScreen = ({ navigation, screen }) => {
     const labelState = [label, setLabel]
 
     return (
+        // Note: Passed down as 'Context' and as
         <CalculatorContext.Provider value={{
             wageState: wageState,
             expenseState: expenseState,
@@ -57,29 +58,27 @@ const MainScreen = ({ navigation, screen }) => {
                     word={wageState}
                     dummyText={"0.00"}
                     keyboard={"numeric"}
-                    width={150} 
+                    width={150}
                     padding={9}
-                    />
+                />
                 <Line />
                 <MainScreenRow
                     text={"Price of Expense    $ "}
                     word={expenseState}
                     dummyText={"0.00"}
                     keyboard={"numeric"}
-                    width={150} 
+                    width={150}
                     padding={2}
-
-                    />
+                />
                 <Line />
                 <MainScreenRow
                     text={"Label"}
                     word={labelState}
                     dummyText={"New item"}
                     keyboard={"default"}
-                    width={243} 
+                    width={243}
                     padding={46}
-                    
-                    />
+                />
                 <CalculateButton
                     text={"Calculate"}
                     word={calculatorState} />
