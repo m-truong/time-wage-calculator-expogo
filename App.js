@@ -34,16 +34,17 @@ const App = () => {
         <Stack.Screen
           name="WelcomeScreen"
           component={WelcomeScreen}
-          options={{ title: 'Time Wager - Welcome Screen' }} />
+          // Update #1: Changed screen titles to "Time Wager"
+          options={{ title: 'Time Wager' }} />
         <Stack.Screen
           name="InfoScreen"
           component={InfoScreen}
-          options={{ title: 'Info Screen' }}
+          options={{ title: 'Time Wager' }}
         />
         <Stack.Screen
           name="MainScreen"
           component={MainScreen}
-          options={{ title: 'Main Screen' }}
+          options={{ title: 'Time Wager' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

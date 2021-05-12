@@ -14,8 +14,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#fff',
         margin: 10,
-        // borderColor: '#fff',
-        // borderWidth: 10,
         marginBottom: 40,
     },
     text: {
@@ -35,7 +33,6 @@ const WelcomeScreen = ({ navigation }) => {
                 text={"Skip Intro"}
                 // Note: Must pass down {navigation} as a prop to the <TouchableOpacity> component to change screens
                 navigation={navigation}
-                // screen={"MainScreen"}
             />
             <WelcomeScreenBubble
                 text={text.text1}
