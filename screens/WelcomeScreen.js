@@ -1,22 +1,23 @@
 import React from 'react'
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 import MyButton from '../components/MyButton';
 import PageLink from '../components/PageLink'
 import WelcomeScreenBubble from '../components/WelcomeScreenBubble'
 import BubbleStyles from '../utilities/BubbleStyles'
 import { text } from '../utilities/Text'
+import IncomeInequalityImage from '../svg/IncomeInequalityImage'
 
 const styles = StyleSheet.create({
-    // Tip: Essentially flexbox 'Bootstrap' properties
     container: {
         flex: 1,
         justifyContent: 'space-between',
         alignItems: 'center',
         backgroundColor: '#fff',
-        margin: 10,
-        // borderColor: '#fff',
-        // borderWidth: 10,
-        marginBottom: 40,
+        padding: 15,
+        paddingBottom: 30,
+        // borderStyle: 'solid',
+        // borderColor: 'white',
+        // borderWidth: 1,
     },
     text: {
         color: 'black',
@@ -35,7 +36,6 @@ const WelcomeScreen = ({ navigation }) => {
                 text={"Skip Intro"}
                 // Note: Must pass down {navigation} as a prop to the <TouchableOpacity> component to change screens
                 navigation={navigation}
-                // screen={"MainScreen"}
             />
             <WelcomeScreenBubble
                 text={text.text1}
@@ -53,9 +53,7 @@ const WelcomeScreen = ({ navigation }) => {
                 text={text.text4}
                 background={BubbleStyles.background2}
                 textStyle={BubbleStyles.text} />
-            <Image
-                source={require('../res/images/incomeInequalityImage.png')}
-            />
+            <IncomeInequalityImage />
             <MyButton
                 text={"Continue"}
                 navigation={navigation} 

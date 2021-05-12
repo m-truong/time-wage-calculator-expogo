@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { View, StyleSheet, TextInput } from 'react-native';
-// import { onChange } from 'react-native-reanimated';
 
 const styles = StyleSheet.create({
-    text: {
+    input: {
         color: 'black',
         fontSize: 23,
         fontFamily: 'Courier New',
@@ -33,19 +32,19 @@ const MainScreenInputField = ({ word, dummyText, keyboard, width }) => {
             // borderWidth: 1,
         }}>
             <TextInput
-                style={styles.text}
+                style={styles.input}
                 placeholder={dummyText}
                 keyboardType={keyboard}
                 placeholderTextColor="black"
                 autoCompleteType='off'
                 autoCorrect={false}
                 autoFocus={true} 
-                // keyboardDismissMode='none'
-                // blurOnSubmit={false}
+                keyboardDismissMode='none'
+                blurOnSubmit={false}
                 textAlign="right"
                 clearButtonMode="never"
-                value={tempVal}
-                onChangeText={v => setTempVal(v)}
+                value={state}
+                onChangeText={v => setState(v)}
             />
         </View>
     )

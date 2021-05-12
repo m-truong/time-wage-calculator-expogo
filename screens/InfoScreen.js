@@ -2,20 +2,22 @@ import React from 'react'
 import { View, Text, Image, StyleSheet } from 'react-native';
 import MyButton from '../components/MyButton';
 import PageLink from '../components/PageLink';
+import IncomeInequalityImage from '../svg/IncomeInequalityImage'
+import InfographicImage from '../svg/InfographicImage'
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'space-between',
         alignItems: 'center',
-        margin: 10,
+        padding: 15,
+        paddingBottom: 30,
         backgroundColor: '#fff',
-        marginBottom: 40,
     },
     text: {
         fontSize: 19,
         fontFamily: 'Helvetica'
-    }
+    },
 })
 
 const InfoScreen = ({ navigation }) => {
@@ -25,15 +27,13 @@ const InfoScreen = ({ navigation }) => {
                 text={"Skip Intro"}
                 navigation={navigation}
             />
-            <Image
-                source={require('../res/images/infographicImage.png')}
-            />
+            {/* Update #4: Added new SVG images and replaced PNG images*/}
+            <InfographicImage style={{width: '80%'}} />
             <Text style={styles.text}>
                 Try this experiment with other expenses.
-                </Text>
-            <Image
-                source={require('../res/images/incomeInequalityImage.png')}
-            />
+            </Text>
+            {/* Update #5: Added new SVG images and replaced PNG images*/}
+            <IncomeInequalityImage />
             <MyButton
                 text={"Start"}
                 navigation={navigation}

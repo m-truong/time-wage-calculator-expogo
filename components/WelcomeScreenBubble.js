@@ -1,8 +1,8 @@
 import React from 'react'
-import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text } from 'react-native'
 
 
-const WelcomeScreenBubble = ({ text, textStyle, background}) => {
+const WelcomeScreenBubble = ({ text, textStyle, background }) => {
     return (
         <View style={background}>
             <Text style={textStyle}>{text}</Text>

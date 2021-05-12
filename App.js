@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler'
 import React from 'react'
-import { StyleSheet, Alert } from 'react-native'
+import { StyleSheet } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 // Tip: If using 'export default' don't destructure import. 
@@ -12,18 +12,12 @@ import MainScreen from './screens/MainScreen'
 const Stack = createStackNavigator();
 
 const styles = StyleSheet.create({
+  //  TODO: Update the grey border aroung the screens
   container: {
-    flex: 1,
-    paddingTop: 60,
-  },
-  text: {
-    color: 'black',
-    fontSize: 30
-  },
-  img: {
-    width: 100,
-    height: 100,
-    borderRadius: (100 / 2)
+    // flex: 1,
+    // paddingTop: 60,
+    margin: 0,
+    padding: 0,
   }
 })
 
@@ -34,16 +28,17 @@ const App = () => {
         <Stack.Screen
           name="WelcomeScreen"
           component={WelcomeScreen}
-          options={{ title: 'Time Wager - Welcome Screen' }} />
+          // Update #1: Changed screen titles to "Time Wager"
+          options={{ title: 'Time Wager' }} />
         <Stack.Screen
           name="InfoScreen"
           component={InfoScreen}
-          options={{ title: 'Info Screen' }}
+          options={{ title: 'Time Wager' }}
         />
         <Stack.Screen
           name="MainScreen"
           component={MainScreen}
-          options={{ title: 'Main Screen' }}
+          options={{ title: 'Time Wager' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

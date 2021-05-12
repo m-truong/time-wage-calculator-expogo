@@ -5,15 +5,15 @@ const BubbleStyles = StyleSheet.create({
         fontFamily: 'Helvetica',
         color: 'black',
         fontSize: 16,
-        textAlign: 'left',
+        textAlign: 'center',
     },
     background1: {
         backgroundColor: '#E2CFE9',
         borderRadius: 20,
         padding: 9,
         marginRight: 80,
-        // width: 285,
-        // height: 33
+        // Update #2: Fixed alignment to the left of WelcomeScreen
+        alignSelf: 'flex-start',
     },
     background2: {
         backgroundColor: '#F4DDAC',
@@ -21,7 +21,8 @@ const BubbleStyles = StyleSheet.create({
         width: 290,
         padding: 9,
         marginLeft: 60,
-        // alignItems: 'flex-end'
+         // Update #3: Fixed alignment to the right of WelcomeScreen
+        alignSelf: 'flex-end',
     }
 })
 
