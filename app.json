@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "time-wage-app-expogo",
-    "slug": "time-wage-app-expogo",
+    "name": "Time Wager App ExpoGo",
+    "slug": "time-wager-app-expogo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/TimeWagerAppIcon.png",
@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/TimeWagerAppIcon.png"
-    }
+    },
+    "description": "In today's society, many Americans earn minimum hourly wages and it’s so engrained into our society that it’s not even extreme to say that a Starbucks coffee ($4) is worth about 16 minutes of a person’s time who earns ($15/hr the new minimum wage).\n\nIt also shows the privilege of people who earn higher wages in that it is worth such a small amount of time it’s almost negligible, like say someone who earns $13.4 million an hour (Jeff Bezos, Amazon CEO).\n\nThis mobile application is a \"time wage calculator\" app to help raise awareness for the FightFor15 movement to increase the federal minimum wage from $7.25/hr to $15.00/hr.\n\nThe original concept and UI design was created by Kayla Trinh and developed by Michael Truong.",
+    "githubUrl": "https://github.com/m-truong/time-wage-calculator-expogo"
   }
 }
