@@ -42,6 +42,8 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-start',
         flexDirection: 'row',
         justifyContent: 'flex-end',
+        // ** aligns items vertically centered
+        alignItems: 'center',
         width: 358, // 358
         marginLeft: 20,
         // debugging borders
@@ -69,10 +71,11 @@ const styles = StyleSheet.create({
         // add margin to push input down
         marginTop: 15,
         paddingRight: 15,
-        // flex: 3,
+        // Need this flex apparently 
+        flex: 3,
         alignSelf: 'flex-end',
         width: 150,
-        height: 20,
+        height: 50, // 20
         borderStyle: 'solid',
         borderColor: 'black',
         borderWidth: 1,
@@ -89,10 +92,10 @@ const styles = StyleSheet.create({
         // add margin to push input down
         marginTop: 15,
         paddingRight: 15,
-        // flex: 3,
-        alignSelf: 'flex-end',
+        flex: 3,
+        // alignSelf: 'flex-end',
         width: 150,
-        height: 20,
+        height: 50, // 20 
         borderStyle: 'solid',
         borderColor: 'black',
         borderWidth: 1,
@@ -109,10 +112,10 @@ const styles = StyleSheet.create({
         // add margin to push input down
         marginTop: 15,
         paddingRight: 15,
-        // flex: 3,
+        flex: 3,
         alignSelf: 'flex-end',
         width: 243,
-        height: 20,
+        height: 50, // 20
         borderStyle: 'solid',
         borderColor: 'black',
         borderWidth: 1,
@@ -171,7 +174,7 @@ const MainScreen = ({ navigation, screen }) => {
                         autoCorrect={false}
                         autoFocus={true}
                         keyboardDismissMode='none'
-                        blurOnSubmit={false}
+                        blurOnSubmit={true}
                         textAlign="right"
                         clearButtonMode="never"
                         value={hourlyWage}
@@ -195,22 +198,22 @@ const MainScreen = ({ navigation, screen }) => {
                                 {"Price of Expense    $ "}
                             </Text>
                         </View>
-                        <TextInput
-                            style={styles.input2}
-                            placeholder={"0.00"}
-                            keyboardType={"numeric"}
-                            placeholderTextColor="black"
-                            autoCompleteType='off'
-                            autoCorrect={false}
-                            autoFocus={true}
-                            keyboardDismissMode='none'
-                            blurOnSubmit={false}
-                            textAlign="right"
-                            clearButtonMode="never"
-                            value={priceExpense}
-                            onChangeText={v => setPriceExpense(v)}
-                        />
                     </Text>
+                    <TextInput
+                        style={styles.input2}
+                        placeholder={"0.00"}
+                        keyboardType={"numeric"}
+                        placeholderTextColor="black"
+                        autoCompleteType='off'
+                        autoCorrect={false}
+                        autoFocus={true}
+                        keyboardDismissMode='none'
+                        blurOnSubmit={true}
+                        textAlign="right"
+                        clearButtonMode="never"
+                        value={priceExpense}
+                        onChangeText={v => setPriceExpense(v)}
+                    />
                 </View>
                 <Line />
                 <View style={styles.row}>
@@ -223,28 +226,28 @@ const MainScreen = ({ navigation, screen }) => {
                                     fontFamily: 'Helvetica',
                                     paddingTop: 14,
                                     paddingLeft: 14,
-                                    paddingRight: 10, // 46
+                                    paddingRight: 46, // 46
                                 }}
                             >
                                 {"Label"}
                             </Text>
                         </View>
-                        <TextInput
-                            style={styles.input3}
-                            placeholder={"New Item"}
-                            keyboardType={"default"}
-                            placeholderTextColor="black"
-                            autoCompleteType='off'
-                            autoCorrect={false}
-                            autoFocus={true}
-                            keyboardDismissMode='none'
-                            blurOnSubmit={false}
-                            textAlign="right"
-                            clearButtonMode="never"
-                            value={label}
-                            onChangeText={v => setLabel(v)}
-                        />
                     </Text>
+                    <TextInput
+                        style={styles.input3}
+                        placeholder={"New Item"}
+                        keyboardType={"default"}
+                        placeholderTextColor="black"
+                        autoCompleteType='off'
+                        autoCorrect={false}
+                        autoFocus={true}
+                        keyboardDismissMode='none'
+                        blurOnSubmit={true}
+                        textAlign="right"
+                        clearButtonMode="never"
+                        value={label}
+                        onChangeText={v => setLabel(v)}
+                    />
                 </View>
                 <CalculateButton
                     text={"Calculate"}
