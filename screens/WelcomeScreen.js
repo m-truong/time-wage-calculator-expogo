@@ -5,6 +5,7 @@ import PageLink from '../components/PageLink'
 import WelcomeScreenBubble from '../components/WelcomeScreenBubble'
 import BubbleStyles from '../utilities/BubbleStyles'
 import { text } from '../utilities/Text'
+import IncomeInequalityImage from '../svg/IncomeInequalityImage'
 
 const styles = StyleSheet.create({
     container: {
@@ -53,9 +54,10 @@ const WelcomeScreen = ({ navigation }) => {
                 text={text.text4}
                 background={BubbleStyles.background2}
                 textStyle={BubbleStyles.text} />
-            <Image
+            {/* <Image
                 source={require('../res/images/incomeInequalityImage.png')}
-            />
+            /> */}
+            <IncomeInequalityImage />
             <MyButton
                 text={"Continue"}
                 navigation={navigation} 

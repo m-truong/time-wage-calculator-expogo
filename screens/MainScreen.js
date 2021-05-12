@@ -5,6 +5,8 @@ import MainScreenCalculator from '../components/MainScreenCalculator'
 import CalculateButton from '../components/CalculateButton'
 import Clear from '../components/ClearButton'
 import Line from '../components/HorizontalRule'
+import CalculatingImage from '../svg/CalculatingImage'
+import InformationCircle from '../svg/InformationCircle'
 
 const styles = StyleSheet.create({
     container: {
@@ -141,9 +143,7 @@ const MainScreen = ({ navigation, screen }) => {
             <View style={styles.container}>
                 <TouchableOpacity
                     onPress={() => { navigation.navigate("WelcomeScreen") }}>
-                    <Image
-                        style={{ marginLeft: 330 }}
-                        source={require('../res/images/informationCircle.png')} />
+                    <InformationCircle style={{ marginLeft: 330 }} />
                 </TouchableOpacity>
                 <View style={styles.row}>
                     <Text style={styles.rowText}>
@@ -257,9 +257,10 @@ const MainScreen = ({ navigation, screen }) => {
                 <Text style={styles.text}>
                     of your life to earn.
                 </Text>
-                <Image
+                {/* <Image
                     source={require('../res/images/calculatingImage.png')}
-                />
+                /> */}
+                <CalculatingImage />
             </View>
         </CalculatorContext.Provider>
     )
