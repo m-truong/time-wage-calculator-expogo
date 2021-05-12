@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 import MyButton from '../components/MyButton';
 import PageLink from '../components/PageLink'
 import WelcomeScreenBubble from '../components/WelcomeScreenBubble'
@@ -7,7 +7,6 @@ import BubbleStyles from '../utilities/BubbleStyles'
 import { text } from '../utilities/Text'
 
 const styles = StyleSheet.create({
-    // Tip: Essentially flexbox 'Bootstrap' properties
     container: {
         flex: 1,
         justifyContent: 'space-between',
@@ -15,6 +14,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         margin: 10,
         marginBottom: 40,
+        // Add border with white color 
+        // borderStyle: 'solid',
+        // borderColor: 'white',
+        // borderWidth: 1,
     },
     text: {
         color: 'black',

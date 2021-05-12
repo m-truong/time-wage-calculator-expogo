@@ -1,10 +1,6 @@
-/* TODO #1: DON'T PROP DRILL - ADD CODE TO MAIN SCREEN */
-/* TODO #2: DON'T WRAP INSIDE PARENT <VIEW> to WITH THE STYLES */
-
 import React, { useState } from 'react'
 import { CalculatorContext } from "../components/Context.js"
 import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native'
-// import MainScreenRow from '../components/MainScreenRow'
 import MainScreenCalculator from '../components/MainScreenCalculator'
 import CalculateButton from '../components/CalculateButton'
 import Clear from '../components/ClearButton'
@@ -17,6 +13,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         marginBottom: 40,
+        // Add border with white background 
     },
     text: {
         color: 'black',
@@ -33,29 +30,30 @@ const styles = StyleSheet.create({
         alignSelf: 'baseline',
         justifyContent: 'center',
         // debugging borders
-        borderStyle: 'solid',
-        borderColor: 'black',
-        borderWidth: 1,
+        // borderStyle: 'solid',
+        // borderColor: 'black',
+        // borderWidth: 1,
     },
     row: {
         flex: 1,
         alignSelf: 'flex-start',
         flexDirection: 'row',
-        justifyContent: 'flex-end',
+        // ** REMOVE: justify Content Flex End ** //
+        // justifyContent: 'flex-end',
         // ** aligns items vertically centered
         alignItems: 'center',
-        width: 358, // 358
+        width: 200, // 358
         marginLeft: 20,
         // debugging borders
-        borderStyle: 'solid',
-        borderColor: 'black',
-        borderWidth: 1,
+        // borderStyle: 'solid',
+        // borderColor: 'black',
+        // borderWidth: 1,
     },
     rowText: {
         color: 'black',
         fontSize: 26,
         height: '100%',
-        width: '100%',
+        // width: '100%',
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -72,13 +70,13 @@ const styles = StyleSheet.create({
         marginTop: 15,
         paddingRight: 15,
         // Need this flex apparently 
-        flex: 3,
+        // flex: 3,
         alignSelf: 'flex-end',
-        width: 150,
+        width: 150, // 150 
         height: 50, // 20
-        borderStyle: 'solid',
-        borderColor: 'black',
-        borderWidth: 1,
+        // borderStyle: 'solid',
+        // borderColor: 'black',
+        // borderWidth: 1,
     },
     input2: {
         color: 'black',
@@ -92,13 +90,13 @@ const styles = StyleSheet.create({
         // add margin to push input down
         marginTop: 15,
         paddingRight: 15,
-        flex: 3,
-        // alignSelf: 'flex-end',
-        width: 150,
+        // flex: 3,
+        alignSelf: 'flex-end',
+        width: 150, // 150 
         height: 50, // 20 
-        borderStyle: 'solid',
-        borderColor: 'black',
-        borderWidth: 1,
+        // borderStyle: 'solid',
+        // borderColor: 'black',
+        // borderWidth: 1,
     },
     input3: {
         color: 'black',
@@ -112,13 +110,13 @@ const styles = StyleSheet.create({
         // add margin to push input down
         marginTop: 15,
         paddingRight: 15,
-        flex: 3,
+        // flex: 3,
         alignSelf: 'flex-end',
-        width: 243,
+        width: 240, // 243
         height: 50, // 20
-        borderStyle: 'solid',
-        borderColor: 'black',
-        borderWidth: 1,
+        // borderStyle: 'solid',
+        // borderColor: 'black',
+        // borderWidth: 1,
     },
 })
 
@@ -134,7 +132,6 @@ const MainScreen = ({ navigation, screen }) => {
     const labelState = [label, setLabel]
 
     return (
-        // Note: Passed down as 'Context' and as 'props'
         <CalculatorContext.Provider value={{
             wageState: wageState,
             expenseState: expenseState,
@@ -161,7 +158,7 @@ const MainScreen = ({ navigation, screen }) => {
                                     paddingRight: 9,
                                 }}
                             >
-                                {"Hourly Wage          $"}
+                                {"Hourly Wage        $"}
                             </Text>
                         </View>
                     </Text>
@@ -195,7 +192,7 @@ const MainScreen = ({ navigation, screen }) => {
                                     paddingRight: 2,
                                 }}
                             >
-                                {"Price of Expense    $ "}
+                                {"Price of Expense  $ "}
                             </Text>
                         </View>
                     </Text>

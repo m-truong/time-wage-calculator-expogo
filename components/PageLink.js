@@ -1,25 +1,17 @@
 import React from 'react'
-import { View, Text, Button, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 
 const styles = StyleSheet.create({
     text: {
         color: 'black',
-        fontSize: 17,
+        fontSize: 18, // 18
         fontFamily: 'Helvetica',
         textDecorationLine: "underline",
-        marginLeft: 290,
+        marginLeft: 290, // 290
     },
-    position: {
-        // flex: 1,
-        // vertical position
-        // justifyContent: 'flex-start',
-        // horizontal position
-        // alignItems: 'flex-end'
-    }
 })
 
-// Must pass down as props
-const PageLink = ({ text, navigation, screen }) => {
+const PageLink = ({ text, navigation }) => {
     return (
         <View>
             <TouchableOpacity

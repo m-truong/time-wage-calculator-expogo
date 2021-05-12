@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
         margin: 10,
         backgroundColor: '#fff',
         marginBottom: 40,
+        // Add border with white color 
     },
     text: {
         fontSize: 19,

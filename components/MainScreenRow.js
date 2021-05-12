@@ -1,8 +1,6 @@
-/* TODO: Get keyboard to stay up */
 
 import React from 'react'
 import { View, Text, StyleSheet, TextInput } from 'react-native';
-// import MainScreenInputField from './MainScreenInputField'
 import MainScreenLabel from './MainScreenLabel'
 
 const styles = StyleSheet.create({
@@ -26,9 +24,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    // sign: {
-    //     marginTop: 5,
-    // },
     input: {
         color: 'black',
         fontSize: 23,

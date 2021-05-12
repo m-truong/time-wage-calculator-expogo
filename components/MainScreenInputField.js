@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { View, StyleSheet, TextInput } from 'react-native';
-// import { onChange } from 'react-native-reanimated';
 
 const styles = StyleSheet.create({
     input: {
@@ -40,8 +39,8 @@ const MainScreenInputField = ({ word, dummyText, keyboard, width }) => {
                 autoCompleteType='off'
                 autoCorrect={false}
                 autoFocus={true} 
-                // keyboardDismissMode='none'
-                // blurOnSubmit={false}
+                keyboardDismissMode='none'
+                blurOnSubmit={false}
                 textAlign="right"
                 clearButtonMode="never"
                 value={state}
