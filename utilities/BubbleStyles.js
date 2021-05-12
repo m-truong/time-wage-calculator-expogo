@@ -5,7 +5,7 @@ const BubbleStyles = StyleSheet.create({
         fontFamily: 'Helvetica',
         color: 'black',
         fontSize: 16,
-        textAlign: 'left',
+        textAlign: 'center',
     },
     background1: {
         backgroundColor: '#E2CFE9',

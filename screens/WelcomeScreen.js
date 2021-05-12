@@ -13,9 +13,8 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         backgroundColor: '#fff',
-        margin: 10,
-        marginBottom: 40,
-        // Add border with white color 
+        padding: 15,
+        paddingBottom: 30,
         // borderStyle: 'solid',
         // borderColor: 'white',
         // borderWidth: 1,
@@ -54,9 +53,6 @@ const WelcomeScreen = ({ navigation }) => {
                 text={text.text4}
                 background={BubbleStyles.background2}
                 textStyle={BubbleStyles.text} />
-            {/* <Image
-                source={require('../res/images/incomeInequalityImage.png')}
-            /> */}
             <IncomeInequalityImage />
             <MyButton
                 text={"Continue"}

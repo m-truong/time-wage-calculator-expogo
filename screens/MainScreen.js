@@ -11,11 +11,10 @@ import InformationCircle from '../svg/InformationCircle'
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        margin: 10,
         backgroundColor: '#fff',
         alignItems: 'center',
-        marginBottom: 40,
-        // Add border with white background 
+        padding: 15,
+        paddingBottom: 35,
     },
     text: {
         color: 'black',
@@ -169,7 +168,7 @@ const MainScreen = ({ navigation, screen }) => {
                         placeholderTextColor="black"
                         autoCompleteType='off'
                         autoCorrect={false}
-                        autoFocus={true}
+                        autoFocus={false}
                         keyboardDismissMode='none'
                         blurOnSubmit={true}
                         textAlign="right"
@@ -203,7 +202,7 @@ const MainScreen = ({ navigation, screen }) => {
                         placeholderTextColor="black"
                         autoCompleteType='off'
                         autoCorrect={false}
-                        autoFocus={true}
+                        autoFocus={false}
                         keyboardDismissMode='none'
                         blurOnSubmit={true}
                         textAlign="right"
@@ -237,7 +236,7 @@ const MainScreen = ({ navigation, screen }) => {
                         placeholderTextColor="black"
                         autoCompleteType='off'
                         autoCorrect={false}
-                        autoFocus={true}
+                        autoFocus={false}
                         keyboardDismissMode='none'
                         blurOnSubmit={true}
                         textAlign="right"

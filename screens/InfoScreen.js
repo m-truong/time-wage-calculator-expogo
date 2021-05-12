@@ -10,10 +10,9 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'space-between',
         alignItems: 'center',
-        margin: 10,
+        padding: 15,
+        paddingBottom: 30,
         backgroundColor: '#fff',
-        marginBottom: 40,
-        // Add border with white color 
     },
     text: {
         fontSize: 19,
