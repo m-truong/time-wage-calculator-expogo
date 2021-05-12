@@ -19,10 +19,6 @@ const styles = StyleSheet.create({
         fontSize: 19,
         fontFamily: 'Helvetica'
     },
-    // infoImage: {
-    //     width: 200,
-    //     height: 50,
-    // }
 })
 
 const InfoScreen = ({ navigation }) => {
@@ -33,7 +29,7 @@ const InfoScreen = ({ navigation }) => {
                 navigation={navigation}
             />
             {/* Update #4: Added new SVG images and replaced PNG images*/}
-            <InfographicImage style={styles.infoImage} />
+            <InfographicImage style={{width: '80%'}} />
             <Text style={styles.text}>
                 Try this experiment with other expenses.
             </Text>

@@ -5,7 +5,7 @@ import Svg, { Path, G, Defs } from "react-native-svg"
 function InfographicImage(props) {
   return (
     <Svg
-      width={451}
+      width={360} // 451
       height={256}
       viewBox="0 0 451 256"
       fill="none"

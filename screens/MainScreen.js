@@ -257,9 +257,7 @@ const MainScreen = ({ navigation, screen }) => {
                 <Text style={styles.text}>
                     of your life to earn.
                 </Text>
-                {/* <Image
-                    source={require('../res/images/calculatingImage.png')}
-                /> */}
+                {/* Update #6: Added new SVG image */}
                 <CalculatingImage />
             </View>
         </CalculatorContext.Provider>
