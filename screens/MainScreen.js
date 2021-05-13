@@ -217,7 +217,7 @@ const MainScreen = ({ navigation, screen }) => {
                     word={calculatorState} />
                 <Clear />
                 <Text style={styles.text}>
-                    {label} costs
+                    <Text style={{fontWeight: 'bold'}}>{label}</Text> costs
                 </Text>
                 <MainScreenCalculator />
                 <Text style={styles.text}>
