@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import MyButton from '../components/MyButton';
 import PageLink from '../components/PageLink'
 import WelcomeScreenBubble from '../components/WelcomeScreenBubble'
@@ -15,9 +15,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         padding: 15,
         paddingBottom: 30,
-        // borderStyle: 'solid',
-        // borderColor: 'white',
-        // borderWidth: 1,
     },
     text: {
         color: 'black',
@@ -26,7 +23,7 @@ const styles = StyleSheet.create({
     img: {
         width: 100,
         height: 100,
-    }
+    },
 })
 
 const WelcomeScreen = ({ navigation }) => {
@@ -56,8 +53,8 @@ const WelcomeScreen = ({ navigation }) => {
             <IncomeInequalityImage />
             <MyButton
                 text={"Continue"}
-                navigation={navigation} 
-                screen={"InfoScreen"}/>
+                navigation={navigation}
+                screen={"InfoScreen"} />
         </View>
     )
 }

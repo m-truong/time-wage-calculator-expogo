@@ -1,10 +1,10 @@
-import {StyleSheet} from 'react-native'
+import { StyleSheet } from 'react-native'
 
 const BubbleStyles = StyleSheet.create({
     text: {
         fontFamily: 'Helvetica',
         color: 'black',
-        fontSize: 16,
+        fontSize: 18,
         textAlign: 'center',
     },
     background1: {
@@ -21,7 +21,7 @@ const BubbleStyles = StyleSheet.create({
         width: 290,
         padding: 9,
         marginLeft: 60,
-         // Update #3: Fixed alignment to the right of WelcomeScreen
+        // Update #3: Fixed alignment to the right of WelcomeScreen
         alignSelf: 'flex-end',
     }
 })
