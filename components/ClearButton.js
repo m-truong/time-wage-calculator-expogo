@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 
 const styles = StyleSheet.create({
     btn: {
-        flex: 0.9,
+        // flex: 0.9,
         padding: 9,
         marginRight: 15,
         // Tip: Use alignSelf

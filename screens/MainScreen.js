@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'space-around',
         alignItems: 'center',
-        // Note: White background color 
         backgroundColor: '#fff',
         // Note: padding for all sides of MainScreen
         padding: 15,
@@ -43,29 +42,10 @@ const styles = StyleSheet.create({
         // borderColor: 'black',
         // borderWidth: 1,
     },
-    // Note: Delete this cause not USED
-    rowText: {
-        color: 'blue',
-        fontSize: 26,
-        // height: '100%',
-        // justifyContent: 'center',
-        // alignItems: 'center',
-    },
-    label: {
-        // flex: 1,
-        // alignSelf: 'baseline',
-        // justifyContent: 'center',
-
-        // // debugging borders
-        // borderStyle: 'solid',
-        // borderColor: 'black',
-        // borderWidth: 1,
-    },
     input1: {
         color: 'black',
         fontSize: 23,
         fontFamily: 'Courier New',
-        
         backgroundColor: '#E2CFE9',
         // marginTop: 15,
         paddingRight: 15,
@@ -132,12 +112,20 @@ const MainScreen = ({ navigation, screen }) => {
         }}>
             <View style={styles.container}>
                 {/* Note: requires applying 'flex property to all flex-children */}
-                <TouchableOpacity style={{ flex: 1.6 }}
+                <TouchableOpacity style={{ flex: 3 }}
                     onPress={() => { navigation.navigate("WelcomeScreen") }}>
-                    <InformationCircle style={{ marginLeft: 310 }} />
+                    <InformationCircle
+                        style={{
+                            marginLeft: 310,
+                            // debugging borders
+                            // borderStyle: 'solid',
+                            // borderColor: 'black',
+                            // borderWidth: 1,
+                        }}
+
+                    />
                 </TouchableOpacity>
                 <View style={styles.row}>
-                    {/* <Text style={styles.rowText}> */}
                     <View>
                         <Text
                             style={{
@@ -156,7 +144,6 @@ const MainScreen = ({ navigation, screen }) => {
                             {"Hourly Wage               $"}
                         </Text>
                     </View>
-                    {/* </Text> */}
                     <TextInput
                         style={styles.input1}
                         placeholder={"0.00"}
@@ -175,7 +162,6 @@ const MainScreen = ({ navigation, screen }) => {
                 </View>
                 <Line />
                 <View style={styles.row}>
-                    {/* <Text style={styles.rowText}> */}
                     <View>
                         <Text
                             style={{
@@ -194,7 +180,6 @@ const MainScreen = ({ navigation, screen }) => {
                             {"Price of Expense         $"}
                         </Text>
                     </View>
-                    {/* </Text> */}
                     <TextInput
                         style={styles.input2}
                         placeholder={"0.00"}
@@ -213,7 +198,6 @@ const MainScreen = ({ navigation, screen }) => {
                 </View>
                 <Line />
                 <View style={styles.row}>
-                    {/* <Text style={styles.rowText}> */}
                     <View>
                         <Text
                             style={{
@@ -233,7 +217,6 @@ const MainScreen = ({ navigation, screen }) => {
                             {"Label"}
                         </Text>
                     </View>
-                    {/* </Text> */}
                     <TextInput
                         style={styles.input3}
                         placeholder={"New Item"}

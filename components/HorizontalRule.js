@@ -5,7 +5,8 @@ const styles = StyleSheet.create({
     line: {
         // flex: 1,
         width: 170,
-        marginLeft: 28,
+        // Need to move Horizontal rule further to the left
+        marginLeft: 10,
         borderColor: 'black',
         borderWidth: 0.5,
         alignSelf: 'flex-start',
