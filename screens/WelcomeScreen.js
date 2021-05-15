@@ -9,20 +9,13 @@ import IncomeInequalityImage from '../svg/IncomeInequalityImage'
 
 const styles = StyleSheet.create({
     container: {
+        // Note: The 'flex-container' needs a flex: 1 property
         flex: 1,
         justifyContent: 'space-between',
         alignItems: 'center',
         backgroundColor: '#fff',
         padding: 15,
         paddingBottom: 30,
-    },
-    text: {
-        color: 'black',
-        fontSize: 30
-    },
-    img: {
-        width: 100,
-        height: 100,
     },
 })
 

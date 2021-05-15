@@ -4,15 +4,17 @@ import { Text, StyleSheet, TouchableOpacity } from 'react-native'
 
 const styles = StyleSheet.create({
     btn: {
+        // Applied Flex property to CalculateButton
+        flex: 1,
         backgroundColor: '#8908B6',
         borderRadius: 12,
-        padding: 9,
-        marginRight: 23,
         width: 125,
         height: 40,
+        padding: 9,
+        marginTop: 13,
+        marginRight: 23,
         // Tip: Use alignSelf
         alignSelf: 'flex-end',
-        marginTop: 13,
     },
     btnText: {
         color: '#ffffff',

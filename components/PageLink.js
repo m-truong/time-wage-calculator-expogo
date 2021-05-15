@@ -3,11 +3,15 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 
 const styles = StyleSheet.create({
     text: {
+        // flex: 1,
         color: 'black',
         fontSize: 18, // 18
         fontFamily: 'Helvetica',
         textDecorationLine: "underline",
-        marginLeft: 290, // 290
+        // Note: Changing Margin might better improve the multi-line issue
+        marginLeft: 260, // 290
+        // alignSelf: 'flex-end',
+        // justifyContent: 'flex-end',
     },
 })
 

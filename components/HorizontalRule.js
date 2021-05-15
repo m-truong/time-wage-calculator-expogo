@@ -3,11 +3,11 @@ import { View, StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
     line: {
-        width: 150,
-        marginLeft: 28,
+        width: 170,
+        marginLeft: 20,
         borderColor: 'black',
         borderWidth: 0.5,
-        alignSelf: 'stretch',
+        alignSelf: 'flex-start',
     }
 })
 
