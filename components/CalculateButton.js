@@ -5,7 +5,7 @@ import { Text, StyleSheet, TouchableOpacity } from 'react-native'
 const styles = StyleSheet.create({
     btn: {
         // Applied Flex property to CalculateButton
-        flex: 1,
+        // flex: 1,
         backgroundColor: '#8908B6',
         borderRadius: 12,
         width: 125,

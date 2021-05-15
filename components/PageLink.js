@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     text: {
         // flex: 1,
         color: 'black',
-        fontSize: 18, // 18
+        fontSize: 16, // 18
         fontFamily: 'Helvetica',
         textDecorationLine: "underline",
         // Note: Changing Margin might better improve the multi-line issue

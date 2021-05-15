@@ -3,8 +3,9 @@ import { View, StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
     line: {
+        // flex: 1,
         width: 170,
-        marginLeft: 20,
+        marginLeft: 28,
         borderColor: 'black',
         borderWidth: 0.5,
         alignSelf: 'flex-start',

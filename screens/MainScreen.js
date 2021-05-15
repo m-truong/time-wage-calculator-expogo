@@ -11,7 +11,7 @@ import InformationCircle from '../svg/InformationCircle'
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'space-between',
+        justifyContent: 'space-around',
         alignItems: 'center',
         // Note: White background color 
         backgroundColor: '#fff',
@@ -26,18 +26,19 @@ const styles = StyleSheet.create({
         marginVertical: 10,
     },
     row: {
-        flex: 2,
+        flex: 3,
         flexDirection: 'row',
         justifyContent: 'space-between',
         // alignContent: '',
         // alignItems: 'flex-start',
-        alignSelf: 'flex-start',
+        // alignSelf: 'flex-start',
         width: 330, // 358
         // height: 70,
-        marginLeft: 20,
+        // Don't use margin-Left
+        // marginLeft: 20,
         // lineHeight: 30,
         paddingTop: 5,
-        // // debugging borders
+        // debugging borders
         // borderStyle: 'solid',
         // borderColor: 'black',
         // borderWidth: 1,

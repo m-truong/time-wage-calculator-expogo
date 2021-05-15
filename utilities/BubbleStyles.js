@@ -13,7 +13,8 @@ const BubbleStyles = StyleSheet.create({
         // flex: 0.1,
         // alignContent: 'space-around',
         // width: '100%',
-
+        marginTop: 10,
+        marginBottom: 10,
         marginRight: 80,
         padding: 9,
         backgroundColor: '#E2CFE9',
@@ -26,7 +27,9 @@ const BubbleStyles = StyleSheet.create({
         // flexWrap: 'wrap',
         // alignContent: 'space-around',
 
-        width: 290,
+        // width: 280,
+        marginTop: 10,
+        marginBottom: 10,
         marginLeft: 60,
         padding: 9,
         backgroundColor: '#F4DDAC',

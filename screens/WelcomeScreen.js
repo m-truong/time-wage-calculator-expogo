@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     container: {
         // Note: The 'flex-container' needs a flex: 1 property
         flex: 1,
-        justifyContent: 'space-between',
+        justifyContent: 'space-around',
         alignItems: 'center',
         backgroundColor: '#fff',
         padding: 15,
@@ -43,7 +43,7 @@ const WelcomeScreen = ({ navigation }) => {
                 text={text.text4}
                 background={BubbleStyles.background2}
                 textStyle={BubbleStyles.text} />
-            <IncomeInequalityImage />
+            <IncomeInequalityImage style={{marginTop: 10, marginBottom: 10}}/>
             <MyButton
                 text={"Continue"}
                 navigation={navigation}

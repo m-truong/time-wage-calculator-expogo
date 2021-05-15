@@ -8,7 +8,7 @@ import InfographicImage from '../svg/InfographicImage'
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'space-between',
+        justifyContent: 'space-around',
         alignItems: 'center',
         padding: 15,
         paddingBottom: 30,
