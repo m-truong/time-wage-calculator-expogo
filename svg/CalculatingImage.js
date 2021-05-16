@@ -4,9 +4,9 @@ import Svg, { Path, Defs, LinearGradient, Stop } from "react-native-svg"
 function calculatingImage(props) {
     return (
         <Svg
-            width={346}
-            height={230}
-            viewBox="0 0 346 230"
+            width={346} 
+            height={210} // 230
+            viewBox="0 0 346 210"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             {...props}

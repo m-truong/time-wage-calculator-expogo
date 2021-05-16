@@ -8,15 +8,15 @@ import InfographicImage from '../svg/InfographicImage'
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'space-around',
+        justifyContent: 'space-evenly',
         alignItems: 'center',
         padding: 15,
         paddingBottom: 30,
         backgroundColor: '#fff',
     },
     text: {
-        fontSize: 19,
-        fontFamily: 'Helvetica'
+        fontSize: 18,
+        textAlign: 'center',
     },
 })
 
@@ -28,7 +28,7 @@ const InfoScreen = ({ navigation }) => {
                 navigation={navigation}
             />
             {/* Update #4: Added new SVG images and replaced PNG images*/}
-            <InfographicImage style={{width: '80%'}} />
+            <InfographicImage  />
             <Text style={styles.text}>
                 Try this experiment with other expenses.
             </Text>

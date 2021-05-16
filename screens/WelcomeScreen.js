@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     container: {
         // Note: The 'flex-container' needs a flex: 1 property
         flex: 1,
-        justifyContent: 'space-around',
+        justifyContent: 'space-evenly',
         alignItems: 'center',
         backgroundColor: '#fff',
         padding: 15,

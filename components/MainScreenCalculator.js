@@ -7,9 +7,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#C8F0CD',
         padding: 20,
         width: 320,
-        height: 125,
+        height: 115,
         textAlign: 'center',
-        // Tip: Don't need flex to justifyContent**
+        // Tip: **Don't need flex to justifyContent**
         flexDirection: 'row',
         justifyContent: 'space-around', 
         alignItems: 'center',

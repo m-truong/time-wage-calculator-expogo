@@ -3,13 +3,12 @@ import { View, StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
     line: {
-        // flex: 1,
         width: 170,
+        alignSelf: 'flex-start',
         // Need to move Horizontal rule further to the left
         marginLeft: 10,
         borderColor: 'black',
         borderWidth: 0.5,
-        alignSelf: 'flex-start',
     }
 })
 

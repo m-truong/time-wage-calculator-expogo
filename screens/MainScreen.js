@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { CalculatorContext } from "../components/Context.js"
-import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity, TextInput } from 'react-native'
 import MainScreenCalculator from '../components/MainScreenCalculator'
 import CalculateButton from '../components/CalculateButton'
 import Clear from '../components/ClearButton'
@@ -25,18 +25,11 @@ const styles = StyleSheet.create({
         marginVertical: 10,
     },
     row: {
-        flex: 3,
+        flex: 1.4,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        // alignContent: '',
-        // alignItems: 'flex-start',
-        // alignSelf: 'flex-start',
         width: 330, // 358
-        // height: 70,
-        // Don't use margin-Left
-        // marginLeft: 20,
-        // lineHeight: 30,
-        paddingTop: 5,
+        paddingTop: 7,
         // debugging borders
         // borderStyle: 'solid',
         // borderColor: 'black',
@@ -47,13 +40,11 @@ const styles = StyleSheet.create({
         fontSize: 23,
         fontFamily: 'Courier New',
         backgroundColor: '#E2CFE9',
-        // marginTop: 15,
-        paddingRight: 15,
         alignSelf: 'center',
-        // alignSelf: 'center',
         width: 110, // 150 
-        height: 35, // 20
-        // // debugging borders
+        height: 40, // 20
+        paddingRight: 15,
+        // debugging borders
         // borderStyle: 'solid',
         // borderColor: 'black',
         // borderWidth: 1,
@@ -64,12 +55,11 @@ const styles = StyleSheet.create({
         fontSize: 23,
         fontFamily: 'Courier New',
         backgroundColor: '#E2CFE9',
-        // marginTop: 15,
-        paddingRight: 15,
         alignSelf: 'center',
         width: 110, // 150 
-        height: 35, // 20 
-        // // debugging borders
+        height: 40, // 20 
+        paddingRight: 15,
+        // debugging borders
         // borderStyle: 'solid',
         // borderColor: 'black',
         // borderWidth: 1,
@@ -80,12 +70,11 @@ const styles = StyleSheet.create({
         fontSize: 23,
         fontFamily: 'Courier New',
         backgroundColor: '#E2CFE9',
-        // marginTop: 15,
-        paddingRight: 15,
         alignSelf: 'center',
         width: 200, // 243
-        height: 35, // 20
-        // // debugging borders
+        height: 40, // 20
+        paddingRight: 15,
+        // debugging borders
         // borderStyle: 'solid',
         // borderColor: 'black',
         // borderWidth: 1,
@@ -112,7 +101,7 @@ const MainScreen = ({ navigation, screen }) => {
         }}>
             <View style={styles.container}>
                 {/* Note: requires applying 'flex property to all flex-children */}
-                <TouchableOpacity style={{ flex: 3 }}
+                <TouchableOpacity style={{ flex: 1 }}
                     onPress={() => { navigation.navigate("WelcomeScreen") }}>
                     <InformationCircle
                         style={{
@@ -135,7 +124,6 @@ const MainScreen = ({ navigation, screen }) => {
                                 lineHeight: 20,
                                 paddingTop: 14,
                                 paddingLeft: 2,
-                                // paddingRight: 9,
                                 // borderStyle: 'solid',
                                 // borderColor: 'black',
                                 // borderWidth: 1,

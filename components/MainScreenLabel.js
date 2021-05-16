@@ -7,19 +7,7 @@ const styles = StyleSheet.create({
         alignSelf: 'baseline',
         // Centers Text vertically 
         justifyContent: 'center',
-        // debugging borders
-        // borderStyle: 'solid',
-        // borderColor: 'black',
-        // borderWidth: 1,
     },
-    // text: {
-    //     color: 'black',
-    //     fontSize: 22,
-    //     fontFamily: 'Helvetica',
-    //     paddingTop: 14,
-    //     paddingLeft: 1,
-    //     paddingRight: 45,
-    // },
 })
 
 const MainScreenLabel = ({ text, padding }) => {

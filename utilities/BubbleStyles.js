@@ -2,17 +2,12 @@ import { StyleSheet } from 'react-native'
 
 const BubbleStyles = StyleSheet.create({
     text: {
-        // styling the Bubble component text
-        fontFamily: 'Helvetica',
         color: 'black',
-        fontSize: 18,
+        fontSize: 15,
+        fontFamily: 'Helvetica',
         textAlign: 'center',
-        // flexWrap: 'wrap',
     },
     background1: {
-        // flex: 0.1,
-        // alignContent: 'space-around',
-        // width: '100%',
         marginTop: 10,
         marginBottom: 10,
         marginRight: 80,
@@ -23,11 +18,6 @@ const BubbleStyles = StyleSheet.create({
         alignSelf: 'flex-start',
     },
     background2: {
-        // flex: 0.2,
-        // flexWrap: 'wrap',
-        // alignContent: 'space-around',
-
-        // width: 280,
         marginTop: 10,
         marginBottom: 10,
         marginLeft: 60,

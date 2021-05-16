@@ -4,7 +4,7 @@ import Svg, { Path, Defs, LinearGradient, Stop } from "react-native-svg"
 function IncomeInequalityImage(props) {
   return (
     <Svg
-      width={316}
+      width={316} // 316
       height={248}
       viewBox="0 0 316 248"
       fill="none"

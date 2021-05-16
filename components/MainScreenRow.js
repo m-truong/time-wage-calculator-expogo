@@ -11,10 +11,6 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end',
         width: 358,
         marginLeft: 20,
-        // debugging borders
-        // borderStyle: 'solid',
-        // borderColor: 'black',
-        // borderWidth: 1,
     },
     text: {
         color: 'black',
@@ -33,7 +29,6 @@ const styles = StyleSheet.create({
         width: '100%',
         // Note: Need '100%' height so that 'textInput' component stretches vertically; but needed to decrease 
         height: '80%',
-        // add margin to push input down
         marginTop: 15,
         paddingRight: 15,
     },
@@ -60,10 +55,6 @@ const MainScreenRow = ({ text, word, width, dummyText, keyboard, padding }) => {
                     alignSelf: 'flex-end',
                     width: width,
                     height: 20,
-                    // debugging borders+
-                    // borderStyle: 'solid',
-                    // borderColor: 'black',
-                    // borderWidth: 1,
                 }}>
                     <TextInput
                         style={styles.input}

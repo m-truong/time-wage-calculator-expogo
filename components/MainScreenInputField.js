@@ -11,7 +11,6 @@ const styles = StyleSheet.create({
         width: '100%',
         // Note: Need '100%' height so that 'textInput' component stretches vertically; but needed to decrease 
         height: '80%',
-        // add margin to push input down
         marginTop: 15,
         paddingRight: 15,
     },
@@ -26,10 +25,6 @@ const MainScreenInputField = ({ word, dummyText, keyboard, width }) => {
             alignSelf: 'flex-end',
             width: width,
             height: 20,
-            // debugging borders+
-            // borderStyle: 'solid',
-            // borderColor: 'black',
-            // borderWidth: 1,
         }}>
             <TextInput
                 style={styles.input}
