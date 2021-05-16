@@ -8,7 +8,8 @@ const styles = StyleSheet.create({
         borderRadius: 12,
         width: 125,
         height: 40,
-        padding: 9,
+        padding: 9, // 9
+        marginRight: 10,
         marginTop: 5,
         // Tip: Use alignSelf
         alignSelf: 'flex-end',

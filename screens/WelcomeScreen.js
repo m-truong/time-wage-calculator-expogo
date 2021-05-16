@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import MyButton from '../components/MyButton';
 import PageLink from '../components/PageLink'
 import WelcomeScreenBubble from '../components/WelcomeScreenBubble'
@@ -11,11 +11,10 @@ const styles = StyleSheet.create({
     container: {
         // Note: The 'flex-container' needs a flex: 1 property
         flex: 1,
+        backgroundColor: '#fff',
         justifyContent: 'space-evenly',
         alignItems: 'center',
-        backgroundColor: '#fff',
         padding: 15,
-        paddingBottom: 30,
     },
 })
 

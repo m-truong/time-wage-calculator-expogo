@@ -6,8 +6,8 @@ const styles = StyleSheet.create({
     btn: {
         // Tip: Use alignSelf
         alignSelf: 'flex-end',
-        marginTop: 2,
-        marginRight: 5,
+        marginTop: 5,
+        marginRight: 10,
     },
     btnText: {
         color: 'black',

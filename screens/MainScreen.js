@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         // Note: padding for all sides of MainScreen
         padding: 15,
-        paddingBottom: 35,
     },
     text: {
         color: 'black',
@@ -29,7 +28,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         width: 330, // 358
-        paddingTop: 7,
+        paddingTop: 15,
+        paddingBottom: 10,
         // debugging borders
         // borderStyle: 'solid',
         // borderColor: 'black',
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Courier New',
         backgroundColor: '#E2CFE9',
         alignSelf: 'center',
-        width: 200, // 243
+        width: 210, // 243
         height: 40, // 20
         paddingRight: 15,
         // debugging borders
@@ -101,18 +101,9 @@ const MainScreen = ({ navigation, screen }) => {
         }}>
             <View style={styles.container}>
                 {/* Note: requires applying 'flex property to all flex-children */}
-                <TouchableOpacity style={{ flex: 1 }}
+                <TouchableOpacity style={{ flex: 1, marginBottom: 1, marginLeft: 310, }}
                     onPress={() => { navigation.navigate("WelcomeScreen") }}>
-                    <InformationCircle
-                        style={{
-                            marginLeft: 310,
-                            // debugging borders
-                            // borderStyle: 'solid',
-                            // borderColor: 'black',
-                            // borderWidth: 1,
-                        }}
-
-                    />
+                    <InformationCircle />
                 </TouchableOpacity>
                 <View style={styles.row}>
                     <View>

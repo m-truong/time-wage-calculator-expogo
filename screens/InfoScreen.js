@@ -8,11 +8,10 @@ import InfographicImage from '../svg/InfographicImage'
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor: '#fff',
         justifyContent: 'space-evenly',
         alignItems: 'center',
         padding: 15,
-        paddingBottom: 30,
-        backgroundColor: '#fff',
     },
     text: {
         fontSize: 18,
