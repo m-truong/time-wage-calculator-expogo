@@ -28,6 +28,9 @@ const CalculateButton = ({ text, calculate }) => {
     const [priceExpense, setPriceExpense] = expenseState
     const [calculator, setCalculator] = calculatorState
 
+    /**
+     * handleCalculate - this is main workhorse fn() for calculating the hourlyWage
+     */
     const handleCalculate = () => {
         let days = 0;
         let hoursDiffDec = 0;
@@ -42,32 +45,32 @@ const CalculateButton = ({ text, calculate }) => {
 
         // If roundedSigHours > 24 // ** Only executes if hours over 24
         if (roundedSigHours > 24) {
-            // take Difference 
+            // take Difference
             days = Math.trunc(roundedSigHours / 24)
 
             hoursDiffDec = (roundedSigHours / 24) - days
             // then multiple by 24hrs/day
             hoursDiff = hoursDiffDec * 24
-            // subtracting gives mins** 
+            // subtracting gives mins**
             minsDiffDec = hoursDiff - Math.trunc(hoursDiff)
             // convert into 60mins/sec
             mins = minsDiffDec * 60
-            // Truncate the mins 
+            // Truncate the mins
             mins = Math.trunc(mins)
             // Truncate the hours
             hoursDiff = Math.trunc(hoursDiff)
-            
+
         }
 
         // Has to be under 24
         else if (roundedSigHours < 24) {
-            // Catch if hours are over mins! 
+            // Catch if hours are over mins!
             minsDiffDec = roundedSigHours - Math.trunc(roundedSigHours)
             // convert into 60mins/hr
             mins = minsDiffDec * 60
-            // Truncate the mins 
+            // Truncate the mins
             mins = Math.trunc(mins)
-            // Catches any hours not over 24! 
+            // Catches any hours not over 24!
             hoursDiff = Math.trunc(roundedSigHours)
         }
         setCalculator((prevState) => {
