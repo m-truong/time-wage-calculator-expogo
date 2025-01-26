@@ -42,6 +42,10 @@ const WelcomeScreen = ({ navigation }) => {
                 text={text.text4}
                 background={BubbleStyles.background2}
                 textStyle={BubbleStyles.text} />
+            <WelcomeScreenBubble
+                text={text.text5}
+                background={BubbleStyles.background1}
+                textStyle={BubbleStyles.text} />
             <IncomeInequalityImage style={{marginTop: 10, marginBottom: 10}}/>
             <MyButton
                 text={"Proceed"}
