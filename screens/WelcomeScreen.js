@@ -44,7 +44,7 @@ const WelcomeScreen = ({ navigation }) => {
                 textStyle={BubbleStyles.text} />
             <IncomeInequalityImage style={{marginTop: 10, marginBottom: 10}}/>
             <MyButton
-                text={"Continue"}
+                text={"Proceed"}
                 navigation={navigation}
                 screen={"InfoScreen"} />
         </View>
