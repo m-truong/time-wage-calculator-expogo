@@ -7,7 +7,6 @@
 ---
 ## Improvements and Bug Fixes:
 Quick workaround for incompatible React version install npm packages using:
-
 ```
 npm install --legacy-peer-deps
 ```

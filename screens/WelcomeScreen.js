@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, ScrollView } from 'react-native';
 import MyButton from '../components/MyButton';
 import PageLink from '../components/PageLink'
 import WelcomeScreenBubble from '../components/WelcomeScreenBubble'
@@ -16,42 +16,47 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         padding: 15,
     },
+    scrollView: {
+        backgroundColor: 'white'
+    }
 })
 
 const WelcomeScreen = ({ navigation }) => {
     return (
-        <View style={styles.container}>
-            <PageLink
-                text={"Skip Intro"}
-                // Note: Must pass down {navigation} as a prop to the <TouchableOpacity> component to change screens
-                navigation={navigation}
-            />
-            <WelcomeScreenBubble
-                text={text.text1}
-                background={BubbleStyles.background1}
-                textStyle={BubbleStyles.text} />
-            <WelcomeScreenBubble
-                text={text.text2}
-                background={BubbleStyles.background2}
-                textStyle={BubbleStyles.text} />
-            <WelcomeScreenBubble
-                text={text.text3}
-                background={BubbleStyles.background1}
-                textStyle={BubbleStyles.text} />
-            <WelcomeScreenBubble
-                text={text.text4}
-                background={BubbleStyles.background2}
-                textStyle={BubbleStyles.text} />
-            <WelcomeScreenBubble
-                text={text.text5}
-                background={BubbleStyles.background1}
-                textStyle={BubbleStyles.text} />
-            <IncomeInequalityImage style={{marginTop: 10, marginBottom: 10}}/>
-            <MyButton
-                text={"Proceed"}
-                navigation={navigation}
-                screen={"InfoScreen"} />
-        </View>
+        <ScrollView style={styles.scrollView}>
+            <View style={styles.container}>
+                <PageLink
+                    text={"Skip Intro"}
+                    // Note: Must pass down {navigation} as a prop to the <TouchableOpacity> component to change screens
+                    navigation={navigation}
+                />
+                <WelcomeScreenBubble
+                    text={text.text1}
+                    background={BubbleStyles.background1}
+                    textStyle={BubbleStyles.text} />
+                <WelcomeScreenBubble
+                    text={text.text2}
+                    background={BubbleStyles.background2}
+                    textStyle={BubbleStyles.text} />
+                <WelcomeScreenBubble
+                    text={text.text3}
+                    background={BubbleStyles.background1}
+                    textStyle={BubbleStyles.text} />
+                <WelcomeScreenBubble
+                    text={text.text4}
+                    background={BubbleStyles.background2}
+                    textStyle={BubbleStyles.text} />
+                <WelcomeScreenBubble
+                    text={text.text5}
+                    background={BubbleStyles.background1}
+                    textStyle={BubbleStyles.text} />
+                <IncomeInequalityImage style={{marginTop: 10, marginBottom: 10}}/>
+                <MyButton
+                    text={"Proceed"}
+                    navigation={navigation}
+                    screen={"InfoScreen"} />
+            </View>
+        </ScrollView>
     )
 }
 
